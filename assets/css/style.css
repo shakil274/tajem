@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:wght@400;700;900&family=Roboto:wght@300;400;900&display=swap');
+
+body{
+font-family: 'Roboto', sans-serif;
+}
+/*
+font-family: 'Hammersmith One', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+*/
+  /* ============================ */
+ /****** Default Area CSS ********/
+/*==============================*/
+html{
+    font-size: 62.5%;
+    line-height: 2.5rem;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+}
+P{
+    color: #413d4b;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 3.2rem;
+}
+h2{
+    color: #413d4b;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+h3{
+    color: #413d4b;
+    font-weight: 900;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+h4{
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+h5{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.btn-style-1{
+    color: #00e0d0;
+    border: 0.2rem solid #00e0d0;
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    padding: 0.8rem 1.7rem;
+    display: inline-block;
+    transition: .5s;
+}
+.btn-style-1:hover{
+    background: #00e0d0;
+    color: #1b0258;
+}
+.section-padding{
+    padding: 7rem 0;
+}
+.section-header {
+    text-align: center;
+    position: relative;
+    padding-bottom: 2rem;
+    margin-bottom: 5rem;
+}
+.section-header:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 5rem;
+    height: 0.2rem;
+    background: #413d4b !important;
+    margin: auto;
+    opacity: .30;
+}
+.section-header h2{
+    margin-bottom: 1.2rem;
+}
+.section-header p{
+    color: #2f2d35;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: .75;
+}
+
+  /* ============================ */
+ /****** Header Area CSS *********/
+/*==============================*/
+.header-area{
+    background: url(../images/banner-bg.jpg) no-repeat scroll 0 0 / cover;
+    position: relative;
+    z-index: 1;
+}
+.header-area:after,
+.watch-area:after,
+.team-area:after,
+.testimonials-area:after,
+.footer-area:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#0D0733,#120B3A,#1F1248,#281853,#2D1B5A,#311D5E);
+    z-index: -1;
+    opacity: 0.85;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li a{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: #fff;
+    transition: .5s;
+    padding: 1rem 2rem;
+    display: block;
+}
+.menu ul li a:hover,
+.menu ul li a.active{
+    color: #00e0d0;
+}
+
+.banner-area{
+    text-align: center;
+    color: #fff;
+    padding: 14.5rem 0 6.5rem 0;
+}
+.banner-area h1{
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+.banner-area h1:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 5rem;
+    height: 0.1rem;
+    background: #00e0d0;
+    margin: auto;
+}
+.banner-area p {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 1.4rem;
+    width: 100%;
+    margin: 2rem auto;
+    max-width: 69rem;
+}
+.banner-area a{
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+.dots ul{
+    display: flex;
+    justify-content: center;
+}
+.dots ul li a{
+    width: 1rem;
+    height: 1rem;
+    border: 0.1rem solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    display: block;
+    margin: 0 0.3rem;
+    transition: .5s;
+}
+.dots ul li a:hover,
+.dots ul li a.active{
+    background: #00e0d0;
+    border: 0.1rem solid #fff;
+}
+
+  /* ============================ */
+ /******* Story Area CSS *********/
+/*==============================*/
+.story{
+    display: flex;
+}
+.story-left{
+    flex: 0 0 40%;
+    text-align: center;
+}
+.story-right{
+    flex: 0  0 60%;
+}
+.story-right h2{
+    margin-bottom: 2.5rem;
+}
+.story-right p{
+    margin-bottom: 3rem;
+    opacity: .75;
+}
+
+  /* ============================ */
+ /******* Watch Area CSS *********/
+/*==============================*/
+.watch-area{
+    background: url(../images/watch-bg.jpg) no-repeat scroll 0 0 / cover;
+    position: relative;
+    z-index: -1;
+}
+.watch{
+    padding: 20rem 0;
+    text-align: center;
+}
+.watch a{
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+  /* ============================ */
+ /****** Expertise Area CSS ******/
+/*==============================*/
+.section-header{
+    color: #413d4b;
+}
+.expertise-items{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.ex-item{
+    flex: 0 0 33.33%;
+    padding: 3rem;
+    box-sizing: border-box;
+    border-right: 0.1rem solid #ebebeb;
+    border-bottom: 0.1rem solid #ebebeb;
+}
+.ex-item img{
+    height: 5.2rem;
+    width: auto;
+    transition: .5s;
+}
+.ex-item img:hover{
+    transform: scale(1.1);
+}
+.ex-item:nth-child(3),
+.ex-item:last-child{
+    border-right-color: transparent;
+}
+.ex-item:nth-child(4),
+.ex-item:nth-child(5),
+.ex-item:last-child{
+    border-bottom-color: transparent;
+}
+.ex-item h3 {
+    margin: 2rem 0 1.5rem 0;
+}
+.ex-item p{
+    color: #333333;
+    opacity: .75;
+    font-size: 1.5rem;
+}
+
+  /* ============================ */
+ /******** Team Area CSS *********/
+/*==============================*/
+.team-area{
+    background: url(../images/team/team-bg.jpg) no-repeat scroll 0 0 / cover;
+    position: relative;
+    z-index: 1;
+}
+.team-area .section-header h2,
+.team-area .section-header p{
+    color: #fff;
+}
+.team-area .section-header:after{
+    background: #fff !important;
+}
+.team-items{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4,calc(25% - 1.5rem));
+    grid-column-gap: 2rem;
+}
+.single-member{
+    box-sizing: border-box;
+
+}
+.single-member img{
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: .5s;
+}
+.single-member img:hover{
+    transform: scale(1.1);
+    border-radius: 10%;
+}
+.member-details{
+    border: 0.1rem solid #ddd;
+    padding: 1.5rem 0;
+    box-sizing: border-box;
+}
+.member-details h3{
+    color: #fff;
+}
+.member-details p{
+    color: #fafafa;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    opacity: .70;
+}
+.team-bottom{
+    text-align: center;
+    margin-top: 5.5rem;
+}
+.team-bottom p{
+    color: #f3f3f3;
+    margin-bottom: 2rem;
+}
+
+  /* ============================ */
+ /******** Works Area CSS ********/
+/*==============================*/
+.works-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+}
+.works-header a{
+    color: #413d4b;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+.works-header a i{
+    color: #413d4b;
+    margin-left: 0.8rem;
+    opacity: .50;
+}
+.works-header a:hover,
+.works-header a:hover i{
+    color: #0652DD;
+}
+.works-items{
+    display: grid;
+    grid-template-columns: repeat(6,16.66%);
+    grid-template-rows: 20rem 20rem;
+}
+.work-item img{
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+}
+.works-button{
+    text-align: center;
+    margin-top: 7rem;
+}
+
+  /* ============================ */
+ /***** Testimonials Area CSS ****/
+/*==============================*/
+.testimonials-area{
+    background: url(../images/testimonials/testi-bg.jpg) no-repeat scroll 0 0 / cover;
+    position: relative;
+    z-index: 1;
+}
+.testimonials{
+    width: 80%;
+    margin: auto;
+}
+.testi-item{
+    text-align: center;
+}
+.testi-item:before{
+    content: url(../images/testimonials/kotesion.png);
+}
+.testi-item p{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #ffffff;
+    width: 98%;
+    margin: auto;
+    opacity: .85;
+    margin-bottom: 4rem;
+    margin-top: 3.5rem;
+}
+.testi-item h4{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.testi-item h5{
+    opacity: .70;
+}
+.testi-dots{
+    margin: auto;
+}
+.testi-dots ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    align-items: center;
+}
+.testi-dots ul li a{
+    margin: 0 1rem;
+}
+.testi-dots ul li a i{
+    font-size: 2.5rem;
+    color: #89868f;
+}
+
+  /* ============================ */
+ /******* Contact Area CSS *******/
+/*==============================*/
+.contact{
+    display: flex;
+}
+.contact-left,
+.contact-right{
+    flex: 0 0 50%;
+}
+.contact-right{
+    padding-left: 8.33%;
+    box-sizing: border-box;
+}
+.contact-left form{
+    margin-top: 2.5rem;
+}
+.input-item{
+    margin-bottom: 2rem;
+}
+.input-item input[type="text"],
+.input-item input[type="email"],
+.input-item textarea{
+    width: 100%;
+    padding: 1.5rem 2rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    color: #413d4b;
+    border: 0.1rem solid #ebebeb;
+}
+.input-item textarea{
+    height: 20rem;
+}
+
+.our-clients{
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 4rem;
+    align-items: center;
+}
+
+  /* ============================ */
+ /******* Contact Area CSS *******/
+/*==============================*/
+.footer-area{
+    background: url(../images/footer-bg.jpg) no-repeat scroll  0 0 / cover;
+    position: relative;
+    z-index: 1;
+}
+.footer-top{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-item{
+    flex: 0 0 33.33%;
+   
+}
+.footer-item a img{
+    margin-bottom: 2.5rem;
+}
+.footer-item:first-child p{
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: #ffffff;
+    width: 85%;
+}
+.footer-item h3{
+    color:  #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+}
+.footer-item > ul > li{
+    font-weight: 300;
+    font-size: 1.4rem;
+    display: flex;
+    color: #fff;
+    width: 74%;
+    margin-bottom: 2rem;
+}
+.footer-item > ul li i{
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+.footer-item > ul li a{
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+.subscribe form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe input[type="email"]{
+    width: 67%;
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #ffffff;
+    border: 0.1rem solid #9e97af;
+    background: transparent;
+    cursor: pointer;
+}
+.subscribe input[type="email"]:focus{
+    box-shadow: 0 0 0.8rem #fff;
+}
+.subscribe button{
+    padding: 1rem 2.2rem;
+    border: none;
+    background: #a199b4;
+    cursor: pointer;
+    transition: .5s;
+}
+.subscribe button:hover{
+    background: #fff;
+}
+.social ul{
+    display: flex;
+    margin-top: 2.2rem;
+}
+.social ul li a{
+    color: #fff;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 0.1rem solid #fff;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 4rem;
+    margin-right: 1rem;
+}
+.social ul li a i{
+    font-size: 1.7rem;
+    transition: .5s;
+}
+.social ul li a:hover{
+    background: #FFF;
+    color: #1b0258;
+}
+.social ul li a i:hover{
+    transform: scale(1.5);
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+.footer-menu ul{
+    display: flex;
+}
+.footer-menu ul li a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+   margin-right: 3rem;
+}
+.footer-menu ul li a:hover{
+    color: #00e0d0;
+}
+.copyright p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
